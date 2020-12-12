@@ -1,13 +1,11 @@
 <h1>Logos Design Presentation landing page</h1>
 
-.<br>
-.<br>
-
 <h2>Specifications<h2>
- <br>
+.<br>
+.<br>
 <ul>
- <li>It project was write with HTML5 CSS3 and vanilla JS.</li>
- <li>The logos were designed with Illustrator</li>
+ <li><p>The project was write with HTML5, CSS3 and vanilla JS.</p></li>
+ <li><p>The logos were designed with Illustrator</p></li>
 </ul>
 <br>
   
