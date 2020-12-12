@@ -4,7 +4,7 @@
 .<br>
 .<br>
 <ul>
- <li><p>The project was write with HTML5, CSS3 and vanilla JS.</p></li>
+ <li><p>The project was written with HTML5, CSS3 and Vanilla JS.</p></li>
  <li><p>The logos were designed with Illustrator</p></li>
 </ul>
 <br>
