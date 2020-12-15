@@ -19,7 +19,7 @@ links.forEach(link => {
     link.addEventListener('click', toSection);
 })
 
-function toSection(e) {
+function toSection(e) { // Because I was unable to move forward, one of the tutors gave me support on this code https://knowledge.udacity.com/questions/409919
 	e.preventDefault();// To prevent the default action 
     sections.forEach(section => {
     	if(e.target.href.search(section.id) != -1) { //check if the href contains the section id, if yes, then only scroll
