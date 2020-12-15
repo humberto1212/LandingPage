@@ -40,6 +40,10 @@ body {
     background-color: white;
 }
 
+.active {
+    color: red;
+}
+
 /* Section Hero */
 .hero {
     display:grid;
