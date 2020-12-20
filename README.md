@@ -1,11 +1,23 @@
-#Logos Design Presentation landing page
+# landing page
 
-##Specifications
-<ul>
- <li>The project was written with HTML5, CSS3 and Vanilla JS.</li>
- <li>The logos were designed with Illustrator</li>
-</ul>
-<br>
+This Landingpage contains some of the logos I have designed for some clients. 
+
+## Specifications
+
+### The project was written with:
+1. HTML5 
+2. CSS3
+- I have applied rules such as Flexbox 
+- CSS Grid
+- Media queries
+
+3. Vanilla JS
+- Navigation is built dynamically
+- Inserting and excluding classes
+- Scroll to the appropriate section
+
+4. The logos were designed with Illustrator
+
   
 [Please visit the link to see the page](https://humberto1212.github.io/LandingPage/index.html)
 
