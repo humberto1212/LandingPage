@@ -30,7 +30,7 @@ function toSection(e) { // Because I was unable to move forward, one of the tuto
 
 //3
 //Add and remove activ Classes 
-function activ() {
+const activ = () => {
     sections.forEach(clas => {
         const view = clas.getBoundingClientRect()
         if (view.top < 50 && view.top >= -800){
