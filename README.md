@@ -1,4 +1,4 @@
-# landing page
+# Landing page
 
 This Landingpage contains some of the logos I have designed for some clients. 
 
