@@ -14,7 +14,7 @@ This Landingpage contains some of the logos I have designed for some clients.
 
 3. Vanilla JS
 - Navigation is built dynamically
-- Inserting and excluding classes
+- Highlight menu item and sections on scroll by inserting and excluding classes
 - Scroll to the appropriate section
 
 4. The logos were designed with Illustrator
