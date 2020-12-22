@@ -39,6 +39,10 @@ body {
     color: red;
 }
 
+.active_nav {
+    color: red;
+}
+
 /* Section Hero */
 .hero {
     display:grid;
