@@ -52,3 +52,20 @@ function goToTop() {
 
 topButton.addEventListener('click', goToTop)
 
+//5
+//Add and remove activ Classes menu
+const linkMenus = document.querySelectorAll('a')
+const activNav = () => {
+    sections.forEach(sec => {
+        linkMenus.forEach(lis => {
+            if (lis.classList.contains(sec.id) && sec.classList.contains("active")){
+                lis.classList.add("active_nav");
+            }
+            else{
+                lis.classList.remove("active_nav"); 
+            };           
+        })       
+    })    
+};
+
+window.addEventListener('scroll', activNav)
