@@ -19,6 +19,6 @@ This Landingpage contains some of the logos I have designed for some clients.
 
 4. The logos were designed with Illustrator
 
-  
+ ### Link
 [Please visit the link to see the page](https://humberto1212.github.io/LandingPage/index.html)
 
