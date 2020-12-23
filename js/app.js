@@ -30,11 +30,22 @@ function toSection(e) { // Because I was unable to move forward, one of the tuto
 
 //3
 //Add and remove activ Classes 
+//3
+//Add and remove activ Classes 
 const activ = () => {
+    const linkMenus = document.querySelectorAll('a')
     sections.forEach(clas => {
         const view = clas.getBoundingClientRect()
         if (view.top < 50 && view.top >= -800){
             clas.classList.add("active");
+            linkMenus.forEach(lis => {
+                if (clas.classList.contains("active") && lis.classList.contains(clas.id)){
+                    lis.classList.add("active_nav");
+                }
+                else {
+                    lis.classList.remove("active_nav"); 
+                }
+            })
         }
         else{
             clas.classList.remove("active"); 
@@ -42,7 +53,7 @@ const activ = () => {
     })
 };
 
-window.addEventListener('scroll', activ);
+window.addEventListener('scroll', activ)
 
 //4
 //function to go back to the top
