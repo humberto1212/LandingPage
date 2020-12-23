@@ -7,7 +7,7 @@ let navList = '';
 // 1
 //list creation with class, href and dataset           
 for (var i = 0; i < sections.length; i++) {
-    const list = `<li><a class="links_menu" href="#${sections[i].id}">${sections[i].dataset.name}</a></li>`;
+    const list = `<li><a class="links_menu ${sections[i].id}" href="#${sections[i].id}">${sections[i].dataset.name}</a></li>`;
     navList += list;      
 }
 
