@@ -35,18 +35,19 @@ const activ = () => {
     sections.forEach(clas => {
         const view = clas.getBoundingClientRect()
         if (view.top < 50 && view.top >= -800){
-            clas.classList.add("active");
+            clas.classList.add("active");            
             linkMenus.forEach(lis => {
                 if (clas.classList.contains("active") && lis.classList.contains(clas.id)){
                     lis.classList.add("active_nav");
                 }
-                else {
-                    lis.classList.remove("active_nav"); 
+            })
+        }else{
+            clas.classList.remove("active");
+            linkMenus.forEach(lis => {                
+                if (lis.classList.contains(clas.id)){
+                    lis.classList.remove("active_nav");
                 }
             })
-        }
-        else{
-            clas.classList.remove("active"); 
         }
     })
 };
