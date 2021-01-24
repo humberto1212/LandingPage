@@ -55,9 +55,24 @@ const activ = () => {
 window.addEventListener('scroll', activ)
 
 //4
-//function to go back to the top
-function goToTop() {
+//When scrolls down 550px from the top, show the button
+const topButton = document.getElementById("topButton");
+
+const showButton = () => {
+if (document.documentElement.scrollTop > 550) {
+    topButton.style.display = "block";
+} else {
+    topButton.style.display = "none";
+  }
+};
+
+window.addEventListener('scroll', showButton);
+
+
+// When the user clicks on the button, scroll to the top
+function goUp(e) {
+    e.preventDefault();  
     document.documentElement.scrollTop = 0;
 }
 
-topButton.addEventListener('click', goToTop)
+window.topButton.addEventListener('click', goUp);
