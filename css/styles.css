@@ -4,6 +4,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: rgba(128, 128, 128, 0.838);
 }
 
 .header {
@@ -36,11 +37,12 @@ body {
 }
 
 .active {
-    color: red;
+    color: black;
 }
 
 .active_nav {
-    color: red;
+    font-size: 20px;
+    transition: 300ms;
 }
 
 /* Section Hero */
@@ -68,6 +70,7 @@ body {
 .title_hero {
     grid-column: 1/5;
     grid-row: 1;
+    color: black;
 }
 
 .text_hero {
@@ -75,6 +78,7 @@ body {
     grid-column: 3/5;
     text-align: justify;
     margin-right: 10px;
+    color: black;
 }
 
 /* container 1 "Work Flow" */
@@ -107,11 +111,6 @@ span {
     margin-left: 20px;
 }
 
-.gif{
-    grid-column: 1/4;    
-    grid-row: 1/4;
-}
-
 /* container 2 "onlineversammlung" */
 .container_2 {
     display:grid;
@@ -138,7 +137,7 @@ span {
 .title_2 {
     grid-column: 1;    
     grid-row: 2;
-    margin-top: 80px;
+    margin-top: 30px;
     margin-left: 20px;
 }
 
@@ -148,6 +147,7 @@ span {
     text-align: justify;
     margin-right: 10px;
     margin-top: 40px;
+    font-size: 25px;
 }
 
 .image_2 {
@@ -256,23 +256,36 @@ span {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     width: 100vw;
-    height: 130px;
-    background: rgba(128, 128, 128, 0.858);
-    margin: 0 0 0 -8px;  
+    height: 90px;
+    background: #FCB97D;
+    box-shadow: inset 0px -10px 10px rgba(255, 170, 72, 0.166), inset 0px 10px 10px rgba(255, 255, 255, 0.125);
+    margin-bottom: -50px;
+    margin-left: -8px;
 }
 
 #topButton {
-    grid-column: 5;
-    grid-row: 4;
-    width: 150px;
-    height: 100px;
-    border-radius: 100% 0 0 0;
+    width: 100px;
+    height: 60px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none; 
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    border-radius: 40% 10% 40% 10%;
     background: rgba(0, 0, 0, 0.214);
     box-shadow: inset 0px -10px 10px rgba(255, 170, 72, 0.166), inset 0px 10px 10px rgba(255, 255, 255, 0.125);
     backdrop-filter: blur(1px);
-    font-weight: bolder;
-    font-size:20px;
-    text-align: right;
+}
+
+#topButton:hover {
+    background-color: #555;
 }
 
 .udacity {
@@ -282,33 +295,7 @@ span {
 
  /* Devices with min 667px */
  @media screen and (min-width: 667px) {
-
-
-    /* container 1 "Work Flow" */
-    .container_1 {
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        width: 100vw;
-        height: 700px;
-        margin: 0 0 0 -8px;
-        padding-top: 30px;
-    }
-    
-    .title_1{
-        grid-column: 1;    
-        grid-row: 1;
-    }
-    
-    .text_1 {
-        grid-column: 1/5;    
-        grid-row: 2/3;  
-    }
-    
-    .gif{
-        grid-column: 1/4;    
-        grid-row: 1/4;
-    }
+ 
     
     /* container 2 "Onlineversammlung" */
     .image_2 {
@@ -340,17 +327,6 @@ span {
         height: 255px;
         margin-bottom: 15px;
     }
-    
-    /* Footer */
-    .footer_landing{
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        width: 100vw;
-        height: 130px;
-        background: rgba(128, 128, 128, 0.906);
-        margin: 0 0 0 -8px;   
-    }
  }    
 
  /* Devices with min 768px */
@@ -359,7 +335,7 @@ span {
 
     /* Section Hero */
     .hero {
-        height: 1320px;
+        height: 1100px;
     }
 
     .figure_hero {
@@ -374,32 +350,6 @@ span {
     .text_hero {
         font-size: 20px;
     }
-
-    /* Work Flow */
-    .container_1 {
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        width: 100vw;
-        height: 700px;
-        margin: 0 0 0 -8px;
-        padding-top: 30px;
-    }
-    
-    .title_1{
-        grid-column: 1;    
-        grid-row: 1;
-    }
-    
-    .text_1 {
-        grid-column: 1/5;    
-        grid-row: 2/3;  
-    }
-    
-    .gif{
-        grid-column: 1/4;    
-        grid-row: 1/4;
-    }
     
     /* container 2 "Onlineversammlung" */
     .container_2{
@@ -411,12 +361,7 @@ span {
         font-size: 30px;
     }
 
-    .text_2 {
-        font-size: 25px;
-    }
-    
-    .image_2 {
-        grid-column: 3;    
+    .image_2 {    
         width: 355px;
         height: 295px; 
     }
@@ -435,11 +380,9 @@ span {
         font-size: 25px;
     }
 
-    .image_3 {
-        grid-column: 3;    
+    .image_3 {    
         width: 540px;
         height: 500px;  
-        margin-bottom: 50px;
     }
     
     /* container 4 "nicrotaca" */
@@ -456,17 +399,6 @@ span {
     .text_4 {
         font-size: 25px;
     }
-    
-    /* Footer */
-    .footer_landing{
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        width: 100vw;
-        height: 130px;
-        background: rgba(128, 128, 128, 0.906);
-        margin: 0 0 0 -8px;   
-    }
  }    
 
  /* Devices with min 1200px */
@@ -479,5 +411,51 @@ span {
 
     .title_3 {
         grid-column: 5;
+    }
+
+    .hero {
+        height: 600px;
+    }
+
+    .container_1 {
+        height: 800px;
+    }
+
+    .container_2 {
+        height: 800px;
+    }
+
+    .title_2 {
+        margin-top: 75px;
+        font-size: 30px;
+    }
+    
+    .image_2 { 
+        margin-top: -150px;   
+        width: 325px;
+        height: 265px; 
+    }
+
+    .container_3 {
+        height: 800px;
+    }
+
+    .image_3 { 
+        grid-row: 3;
+        margin-top: -100px;   
+        width: 525px;
+        height: 465px; 
+    }
+
+    .container_4 {
+        height: 1000px;
+    }
+
+    .title_4 {
+        margin-bottom: 80px;
+    }
+
+    .image_4 { 
+        grid-row: 3;  
     }
  }
