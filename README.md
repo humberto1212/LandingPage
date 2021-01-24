@@ -1,6 +1,6 @@
 # Landing page
 
-This Landingpage contains some of the logos I have designed for some clients. 
+This landing page contains some of the logos I have designed for some clients. 
 
 ## Specifications
 
@@ -15,6 +15,7 @@ This Landingpage contains some of the logos I have designed for some clients.
 3. Vanilla JS
 - Navigation is built dynamically
 - Highlight menu item and sections on scroll by inserting and excluding classes
+- The button is hidden until the user reach 550 px scroll
 - Scroll to the appropriate section
 
 4. The logos were designed with Illustrator
